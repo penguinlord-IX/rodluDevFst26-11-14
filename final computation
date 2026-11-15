@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""
+final computation - Runner entry point for the Final Computation module.
+Supports executing directly as: python "final computation" or ./"final computation"
+"""
+
+from final_computation import main
+
+if __name__ == "__main__":
+    main()

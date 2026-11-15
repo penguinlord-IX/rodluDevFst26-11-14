@@ -664,6 +664,10 @@ def get_trip_route_scripts() -> str:
             if (typeof initOrUpdateMap === 'function') {
                 initOrUpdateMap(data);
             }
+            // Decoupled notification: If MPG component is loaded, prompt user for MPG
+            if (typeof promptMpgSection === 'function') {
+                promptMpgSection(data);
+            }
         }
 
         function escapeHtml(text) {
